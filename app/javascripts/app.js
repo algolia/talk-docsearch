@@ -1,8 +1,9 @@
-let Marvel = {
+let Talk = {
   init() {
     // Full list of configuration options available here:
     // https://github.com/hakimel/reveal.js#configuration
     Reveal.initialize({
+      width: 1080,
       controls: false,
       progress: true,
       history: true,
@@ -23,17 +24,7 @@ let Marvel = {
         }
       }]
     });
-
-    // Custom code to display the correct part of the Algolia animation
-    Reveal.addEventListener('fragmentshown', function (event) {
-      var step = $(event.fragment).data('step');
-      if (!step) {
-        return;
-      }
-      var wrapper = $('.column-step');
-      wrapper.data('step', step);
-    });
   }
 };
 
-export default Marvel;
+export default Talk;

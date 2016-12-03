@@ -1,0 +1,27 @@
+section
+  .self-top.raleway.f3.text-shadow Config
+
+  .frn.h4.mt3
+    .fa.bg-black-80.br2.pa1.fcn.mr1
+      .fa.fvc Website-specific
+      .fa.fvc Handle hierarchy
+      a.fa.link.white.b.f6.fvc(href='https://github.com/algolia/docsearch-configs')
+        | Available on GitHub
+        img.di.h1.bg-white.br-100.ml1(src='./img/logo-github.png')
+
+    .fa.w-50.fc
+      pre.bg-near-black.f8.br1.pa1
+        code.language-js
+          |{
+          |  "index_name": "react",
+          |  "start_urls": [
+          |    "facebook.github.io/react/docs/.*"
+          |  ],
+          |  "selectors": {
+          |    "lvl1": ".documentationContent h1",
+          |    "lvl2": ".documentationContent h2",
+          |    "lvl3": ".documentationContent h3",
+          |    "lvl4": ".documentationContent h4",
+          |    "text": ".documentationContent p"
+          |  }
+          |}
